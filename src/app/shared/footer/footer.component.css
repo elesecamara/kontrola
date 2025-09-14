@@ -1,0 +1,45 @@
+footer {
+    min-height: 300px;
+        background-image: url(/assets/img/pie.jpg);
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+footer .row {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 auto;
+}
+.logo-pie
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    /* width: 50px; */
+}
+.logo-pie img{
+    width: 250px; 
+}
+.contacto-pie .row .col {
+    display: flex;
+    justify-content: flex-end;
+}
+.contacto-pie { align-content: center;}
+.pata {
+    color: white;
+}
+.pata ul{
+    list-style: none;
+}
+li.pie-titulo {
+    color: var(--color-contraste-nja);
+}
+.txtPie{
+    font-size: .8em;
+}
+.txtPie img {
+    width: 20px;
+    margin-right: 8px;
+    height: 20px;
+}

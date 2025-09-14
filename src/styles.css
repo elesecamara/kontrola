@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+ :root {
+      --color-primario: #1C4377;
+      --color-secundario: #BCC5CE;
+      --color-apoyo-secundario: #6BB2E0;
+      --color-contraste-vde: #9CD471;
+      --color-contraste-nja: #E88D1C;
+      --color-contraste-oscuro: #112642;
+      --color-titulos:#1C4377;
+      --font-size-base: 16px;
+    }
+    .color-primario{background-color: var(--color-primario)!important;}
+    .color-oscuro{background-color: var(--color-contraste-oscuro)!important; color: whitesmoke!important;}
+    .color-oscuro a{ color: whitesmoke!important;}
+    .color-cont-vde{background-color: var(--color-contraste-oscuro)!important;}
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* El resto de tus estilos globales van aquí */
+body { 
+  margin: 0; 
+  /* Aquí ya puedes usar la fuente */
+  font-family: 'Roboto', sans-serif!important ;
+}
+button.btn.btn-primary{
+    margin-top: 20px;
+    background-color: var(--color-contraste-vde);
+    text-shadow: 1px 1px 2px black;
+    border: 1px solid transparent;
+    padding: 1.5% 6%;
+    border-radius: 25px; 
+}

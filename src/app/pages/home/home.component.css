@@ -1,0 +1,229 @@
+section.bnco {
+    min-height: 430px;
+    background-image: url(/assets/img/bg_white.jpg);
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+section.gris {
+    background-color: #e9e9e9;
+    min-height: 430px;
+    background-image: url("/assets/img/bg_gray.jpg");
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+section.last {
+    background-color: #e9e9e9;
+    min-height: 630px;
+    background-image: url("/assets/img/last.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+section {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionIcn {
+    background-image: url("/assets/img/icn_vde.png");
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center left;
+    color: var(--color-titulos);
+    font-weight: bolder;
+    font-size: 2em;
+    margin-top: 40px;
+}
+.subtitulo {
+    color: var(--color-titulos);
+    font-weight:600;
+    font-size: 1.5em;
+}
+/*grid*/
+/* Estilos para la sección completa */
+.grid-section {
+  max-width: 1200px;
+  margin: 2rem auto; /* Centra la sección en la página */
+  padding: 0 1rem;
+}
+
+.grid-container {
+  display: grid;
+  /* La magia principal: 4 columnas de igual tamaño */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilos para cada tarjeta individual */
+.grid-item {
+  /* Mantiene la forma rectangular (4 de alto por 3 de ancho) */
+  aspect-ratio: 4 / 4; 
+  /*border-radius: 12px;*/
+  overflow: hidden; /* Oculta lo que se salga de los bordes redondeados */
+  position: relative;
+  /* Configuración de la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  /* Empuja el contenido hacia abajo */
+  display: flex;
+  align-items: flex-end;
+  /* Transición suave para futuros efectos hover */
+  transition: transform 0.3s ease-out;
+}
+
+/* Efecto hover sutil */
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contenido de texto dentro de la tarjeta */
+.card-content {
+    color: #0d0e17;
+    padding: 35px 20px 10px 20px;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(245 245 245) 59%, rgb(245 245 245 / 84%) 68%, rgb(245 245 245 / 0%) 100%);
+}
+
+.card-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(47, 47, 60);
+}
+.card-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+/* ::::::::::::::::::::::::::GRID DOS  */
+
+
+
+.grid-section-dos {
+  max-width: 1200px;
+  margin: 2rem auto; 
+  padding: 0 1rem;
+}
+
+
+.grid-container-dos {
+  display: grid;
+  /* La magia principal: 4 columnas de igual tamaño */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+
+.grid-item-dos {
+  /* Mantiene la forma rectangular (4 de alto por 3 de ancho) */
+  aspect-ratio: 4 / 4; 
+  border-radius: 12px;
+  overflow: hidden; /* Oculta lo que se salga de los bordes redondeados */
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease-out;
+}
+
+.grid-item-dos:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.card-content-dos {
+  color: white;
+  padding: 20px;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
+}
+.card-content-dos h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.4rem;
+}
+.card-content-dos p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.card-ofrecemos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card-ofrecemos p {
+    color: rgb(47, 47, 60);
+    margin: 0 0 5px 0;
+    font-size: 0.9rem;
+    padding: .5% 5%;
+    min-height: 120px;
+}
+.card-ofrecemos h3 {
+    color: rgb(47, 47, 60);
+    margin: 0 0 5px 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    
+}
+.card-ofrecemos button {
+     margin-top: 20px;
+     background-color: var(--color-contraste-vde);
+     text-shadow: 1px 1px 2px black;
+     border: 1px solid transparent;
+     padding:  1.5% 6%;
+     border-radius: 25px;
+}
+.imgOfrecemos {
+    width: 70%;
+    border-radius: 8px 8px 0 0;
+}
+.cta {
+    display: flex;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px ;
+}
+.cta h2 {
+    color: white;
+    margin-bottom: 0;
+}
+/* --- LA MAGIA RESPONSIVA --- */
+/* Para Tablets (hasta 1024px) */
+@media (max-width: 1024px) {
+  .grid-container {
+    /* Cambiamos a 2 columnas */
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-container-dos {
+    /* Cambiamos a 2 columnas */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Para Celulares (hasta 600px) */
+@media (max-width: 600px) {
+  .grid-container {
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+  }
+ .grid-container-dos {
+    /* grid-template-columns: 1fr;*/
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

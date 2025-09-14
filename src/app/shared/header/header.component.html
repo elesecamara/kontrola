@@ -1,0 +1,56 @@
+
+<header class="fixed-top shadow">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-3 pb-3 color-primario">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold pt-0 pb-0" routerLink="/"><img class="ms-3" src="/assets/img/logo.png" alt="logo Kontrola"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarPrincipal">
+        <ul class="navbar-nav">
+          <li class="nav-item" *ngIf="!isHome">
+            <a class="nav-link" [routerLink]="ROUTES.HOME" routerLinkActive="active">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="ROUTES.HOME" routerLinkActive="active">Soluciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="ROUTES.HOME" routerLinkActive="active">Industria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="ROUTES.HOME" routerLinkActive="active">Construcción</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="ROUTES.HOME" routerLinkActive="active">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/polizas']" routerLinkActive="active">Polizas de mantenimiento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="ROUTES.HOME" routerLinkActive="active">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="sub-nav d-flex justify-content-end align-items-center py-1 color-oscuro">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/vigilancia']" routerLinkActive="active">VIDEOVIGILANCIA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/ruta-construccion']" routerLinkActive="active">CABLEADO ESTRUCTURADO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/ruta-industria']" routerLinkActive="active">CONTROL DE ACCESO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/ruta-construccion']" routerLinkActive="active">DETECCIÓN DE INCENDIO</a>
+      </li>
+    </ul>
+  </div>
+
+</header>
+
+<div class="header-padding"></div>

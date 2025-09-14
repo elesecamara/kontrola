@@ -1,0 +1,51 @@
+/* Estilos para el componente de vigilancia */
+
+.main-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #dee2e6; /* Borde sutil como en la imagen */
+}
+
+.thumbnail-gallery .img-thumbnail {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  flex: 1; /* Ocupan el espacio disponible */
+  max-width: 100px; /* Ancho máximo para cada miniatura */
+}
+
+.thumbnail-gallery .img-thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: #007bff; /* Resaltado al pasar el mouse */
+}
+
+.product-details h1 {
+  font-size: 2.5rem; /* Tamaño de fuente grande para el título */
+}
+
+.price-item {
+  background-color: #f8f9fa; /* Color de fondo ligero para la tabla de precios */
+}
+
+.btn-dark {
+  background-color: #212529;
+  border: none;
+  font-weight: bold;
+}
+
+.installation-time .warning-icon {
+  font-size: 1.2em;
+}
+
+/* --- RESPONSIVIDAD --- */
+/* Ajustes para dispositivos pequeños (móviles) */
+@media (max-width: 991.98px) {
+  .product-details {
+    margin-top: 2rem; /* Agrega espacio entre la galería y los detalles en vista móvil */
+  }
+
+  .product-details h1 {
+    font-size: 2rem;
+  }
+}

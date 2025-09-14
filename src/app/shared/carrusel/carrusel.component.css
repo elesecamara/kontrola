@@ -1,0 +1,127 @@
+/* Estilo del componente con altura de carrusel y velocidad de animación */
+:host {
+  --carousel-height: 500px;
+  --animation-speed: 0.6s;
+}
+
+/* Contenedor principal del carrusel */
+.carousel-container {
+  width: 100%;
+  height: var(--carousel-height);
+  overflow: hidden; /* Esencial para ocultar los otros slides */
+  position: relative;
+  /*border-radius: 10px;*/
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Wrapper que contiene todos los slides y se mueve */
+.slides-wrapper {
+  display: flex;
+  height: 100%;
+  transition: transform var(--animation-speed) ease-in-out;
+}
+
+/* Estilo de un slide individual */
+.slide {
+  flex-shrink: 0; /* Evita que los slides se encojan */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-position: right center;
+background-size: cover;
+}
+
+/* Estilo común para las columnas izquierda y derecha */
+.slide-column {
+  flex: 1; /* Cada columna ocupa el 50% del espacio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Estilos específicos para la columna izquierda */
+.slide-column.left {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+/* Superposición oscura para que el texto sea más legible en la columna izquierda */
+.slide-column.left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ /* background-color: rgba(0, 0, 0, 0.5);*/
+}
+/* Contenido de la columna izquierda */
+.slide-column.left .left-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.slide-column.left .slide-logo {
+  width: 250px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.slide-column.left h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.553);
+    text-align: left;
+}
+/* Estilos específicos para la columna derecha */
+.slide-column.right {
+  background-color: transparent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+      padding-bottom: 4.5%;
+}
+.slide-column.right h2 {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 83%);
+    text-align: center;
+    max-width: 80%;
+    background-color: #1c437754;
+    padding: .6% 5%;
+    border-radius: 6px;
+}
+/* --- DISEÑO RESPONSIVO --- */
+@media (max-width: 768px) {
+  /* Ajuste de la altura del carrusel en pantallas pequeñas */
+  :host {
+    --carousel-height: auto;
+  }
+
+  /* Apila las columnas verticalmente en pantallas pequeñas */
+  .slide {
+    flex-direction: column;
+  }
+
+  /* Altura mínima para cada sección en móvil */
+  .slide-column {
+    min-height: 180px;
+  }
+.slide-column.left .slide-logo {width: 150px;}
+  /* Ajuste del tamaño de la fuente para h1 en móvil */
+  .slide-column.left h1 {
+    font-size: 1.1rem;
+  }
+.slide-column.right {
+    background-color: transparent;
+    display: flex;
+    align-items: center;}
+  /* Ajuste del tamaño de la fuente para h2 en móvil */
+  .slide-column.right h2 {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+}

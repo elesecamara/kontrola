@@ -1,0 +1,29 @@
+nav.navbar {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-top: 2px  solid var(--color-contraste-vde);
+}
+.sub-nav {
+  background-color: #f8f9fa; 
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.sub-nav .nav-link {
+    color: #343a40;
+    font-weight: lighter;
+    padding: 0.01rem 1rem;
+    font-size: .8em;
+}
+/* Estilo para el link activo en la barra secundaria,*/
+.sub-nav .nav-link.active {
+  color: #007bff; /* Color para destacar el link activo */
+  font-weight: bold;
+}
+.header-padding {
+  height: 101px; /* ¡SE AJUSTA ESTE VALOR A LA ALTURA TOTAL DE  HEADER! */
+}
+.navbar-expand-lg .navbar-collapse {justify-content: flex-end;}
+@media (max-width: 991.98px) {
+  .header-padding {
+    /* Podrías necesitar un valor ligeramente diferente cuando el menú está colapsado */
+    height: 101px; 
+  }
+}
