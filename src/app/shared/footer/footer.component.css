@@ -25,7 +25,7 @@ footer .row {
     display: flex;
     justify-content: flex-end;
 }
-.contacto-pie { align-content: center;}
+.contacto-pie { align-content: center; padding-right: 3rem}
 .pata {
     color: white;
 }
@@ -43,3 +43,19 @@ li.pie-titulo {
     margin-right: 8px;
     height: 20px;
 }
+@media (max-width: 768px) {
+    .logo-pie img {  width: 170px;}
+    footer{ background-size: 100% 100%; padding-top: 6%;}
+    .contacto-pie { align-content: center; padding-right: .1rem}
+    ul {padding-left: .2rem;}
+    .txtPie {  font-size: .6em;}
+    .txtPie img {  width: 10px;}
+}
+@media (max-width: 600px) {
+    footer {  background-size: 100% 100%;}
+    .logo-pie img { width: 150px;}
+    .txtPie { font-size: .76em;}
+    li.pie-titulo {font-size: .85em;}
+    .txtPie img {  width: 15px;}
+}
+
