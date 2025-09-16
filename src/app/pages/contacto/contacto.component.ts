@@ -4,14 +4,13 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { PopUpComponent } from '../../shared/pop-up/pop-up.component';
 
 @Component({
-  selector: 'app-polizas',
+  selector: 'app-contacto',
   standalone: true,
   imports: [CommonModule, MatDialogModule],
-  templateUrl: './polizas.component.html',
-  styleUrl: './polizas.component.css'
+  templateUrl: './contacto.component.html',
+  styleUrl: './contacto.component.css'
 })
-export class PolizasComponent {
-
+export class ContactoComponent {
   constructor(public dialog: MatDialog) {}
 
   openPoliticaPopUp(event: MouseEvent): void {

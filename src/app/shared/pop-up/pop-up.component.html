@@ -1,0 +1,72 @@
+<h2 mat-dialog-title>{{ data.titulo || 'Información' }}</h2>
+<mat-dialog-content>
+  <div *ngIf="data.tipo === 'normal'">
+    <p>Este es el contenido de tu pop-up para las soluciones. Aquí puedes detallar los servicios.</p>
+  </div>
+
+  <div *ngIf="data.tipo === 'politica'">
+    <div class="container">
+        <h1>Política de Privacidad</h1>
+
+        <p>Última actualización: 09-2025</p>
+
+        <p>En Kontrola, valoramos su privacidad y nos comprometemos a proteger su información personal. Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos la información que nos proporciona a través de nuestro formulario de contacto.</p>
+
+        <h2>1. Información que Recopilamos</h2>
+        <p>Recopilamos la siguiente información personal cuando usted interactúa con nuestro formulario de contacto:</p>
+        <ul>
+            <li><strong>Nombre:</strong> Para identificarlo y dirigirnos a usted de manera personalizada.</li>
+            <li><strong>Teléfono:</strong> Para contactarlo en relación a su consulta.</li>
+            <li><strong>Correo Electrónico:</strong> Para comunicarnos con usted y responder a su solicitud.</li>
+            <li><strong>Empresa:</strong> Para entender su perfil profesional y ofrecerle soluciones adecuadas.</li>
+            <li><strong>País/Región:</strong> Para adaptar nuestras comunicaciones y servicios a su ubicación.</li>
+            <li><strong>Industria o Sector:</strong> Para comprender mejor sus necesidades y ofrecerle una propuesta de valor relevante.</li>
+            <li><strong>Contenido del mensaje (¿Cómo podemos ayudarte?):</strong> Para procesar su consulta y brindarle una respuesta precisa.</li>
+        </ul>
+
+        <h2>2. Uso de la Información Recopilada</h2>
+        <p>La información que usted nos proporciona será utilizada exclusivamente para los siguientes fines:</p>
+        <ul>
+            <li>Responder a sus consultas, comentarios o solicitudes.</li>
+            <li>Ofrecerle información sobre nuestros productos y servicios.</li>
+            <li>Análisis interno para mejorar la calidad de nuestros servicios y la experiencia del usuario.</li>
+            <li>Si usted lo ha aceptado expresamente, enviarle comunicaciones de marketing, boletines informativos (newsletters) y promociones.</li>
+        </ul>
+
+        <h2>3. Protección de su Información</h2>
+        <p>Hemos implementado medidas de seguridad técnicas, administrativas y físicas para proteger su información personal contra el acceso no autorizado, el uso indebido o la divulgación. Su información se almacena en servidores seguros y se mantiene confidencial.</p>
+
+        <h2>4. Compartir Información con Terceros</h2>
+        <p>No vendemos, alquilamos ni cedemos su información personal a terceros. Solo compartiremos su información en los siguientes casos:</p>
+        <ul>
+            <li>Con proveedores de servicios que nos ayudan a operar nuestro negocio (por ejemplo, servicios de alojamiento web o de gestión de correo electrónico), siempre bajo acuerdos de confidencialidad estrictos.</li>
+            <li>Cuando la ley lo requiera o para responder a procesos legales válidos.</li>
+        </ul>
+
+        <h2>5. Sus Derechos</h2>
+        <p>Usted tiene derecho a:</p>
+        <ul>
+            <li>Acceder a sus datos personales que tenemos en nuestro poder.</li>
+            <li>Solicitar la rectificación de datos incorrectos o desactualizados.</li>
+            <li>Solicitar la cancelación de sus datos cuando considere que no se están utilizando correctamente.</li>
+            <li>Oponerse al uso de sus datos para fines de marketing o cualquier otro propósito.</li>
+            <li>Revocar su consentimiento para el uso de sus datos en cualquier momento.</li>
+        </ul>
+        <p>Para ejercer estos derechos, puede contactarnos a través de [correo electrónico de contacto o enlace a un formulario].</p>
+
+        <h2>6. Cambios a esta Política de Privacidad</h2>
+        <p>Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Cualquier cambio será publicado en esta página y entrará en vigor de inmediato. Le recomendamos revisar periódicamente esta página para estar al tanto de cualquier actualización.</p>
+
+        <h2>7. Contacto</h2>
+        <p>Si tiene alguna pregunta o inquietud sobre esta Política de Privacidad, no dude en contactarnos a través de:</p>
+        <p>
+            <strong>Correo electrónico:</strong> soluciones&#64;kontrola.mx<br>
+            <strong>Teléfono:</strong> 729 259 2585<br>
+        </p>
+
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cerrar</button>
+</mat-dialog-actions>

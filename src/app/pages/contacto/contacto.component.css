@@ -1,0 +1,93 @@
+/* --- ESTILOS GENERALES --- */
+.shield-icon {
+  font-size: 2.5rem;
+}
+
+/* --- ESTILOS PARA LAS TARJETAS DE PLANES --- */
+.card {
+  border-radius: 1rem;
+  border: 1px solid #e9ecef;
+}
+
+.plan-title {
+  font-family: 'Caveat', cursive; /* Asegúrate de importar esta fuente en tu index.html */
+  font-size: 3rem;
+  margin-bottom: -10px;
+}
+
+.plan-title.preventivo { 
+  color: #d9534f; 
+}
+
+.plan-title.correctivo { 
+  color: #0275d8; 
+}
+
+.plan-title.servicio { 
+  color: #5cb85c; 
+}
+
+.benefits-list ul {
+  list-style-type: '• '; /* Cambia el estilo del bullet point */
+  padding-left: 1.2rem;
+}
+
+.btn-warning-custom {
+  background-color: #f0ad4e;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.btn-warning-custom:hover {
+  background-color: #ec971f;
+  color: #fff;
+}
+
+/* --- ESTILOS PARA EL BANNER --- */
+.banner-orange {
+  background-color: #f0ad4e;
+}
+
+/* --- ESTILOS PARA LA SECCIÓN DE CONTACTO --- */
+.contact-section {
+  position: relative;
+  background-image: url('https://via.placeholder.com/1920x1080.png?text=Fondo+con+persona'); /* Cambia por la ruta a tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Efecto parallax */
+}
+
+/* Superposición oscura para que el texto sea legible */
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Asegura que el contenido esté sobre la superposición */
+.contact-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-form-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-control, .form-select {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 0.75rem 1rem;
+}
