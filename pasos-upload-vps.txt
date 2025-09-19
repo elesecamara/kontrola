@@ -1,0 +1,17 @@
+crear imagen:
+ng build --configuration production
+docker build -t danycaro147/braincode-home:latest .
+docker push danycaro147/braincode-home:latest
+
+conectarse al vps
+31.97.131.84
+cd braincodeHome && docker compose down
+docker pull danycaro147/braincode-home:latest
+docker compose up -d --force-recreate
+
+conectarse a la bd:
+docker exec -it braincode_postgres psql -U bc_prod_user -d bc_prod_db -c "\dt braincode.*"
+
+
+Para obtener certificados:
+sudo certbot --nginx -d n8n.braincode.com.mx

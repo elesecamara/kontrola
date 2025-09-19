@@ -16,10 +16,18 @@ export type AppRoute = keyof typeof APP_ROUTES;
 // Configuración de rutas de Angular (usa las constantes)
 export const routes: Routes = [
   { path: APP_ROUTES.HOME, component: HomeComponent, title: 'Inicio | Kontrola' },
-  { path: 'vigilancia', component: VigilanciaComponent, title: 'Videovigilancia | Kontrola' },
-  { path: 'polizas', component: PolizasComponent, title: 'Polizas | Kontrola' },
-  { path: 'contacto', component: ContactoComponent, title: 'Contacto | Kontrola' },
-  { path: 'industria', component: IndustriaComponent, title: 'Industria | Kontrola' },
-  { path: 'construccion', component: ConstruccionComponent, title: 'Construcción | Kontrola' },
+  {
+    path: 'vigilancia',
+    loadComponent: () => import('./pages/vigilancia/vigilancia.component').then(c => c.VigilanciaComponent),
+    title: 'Videovigilancia | Kontrola'
+  },
+  {
+    path: 'polizas',
+    loadComponent: () => import('./pages/polizas/polizas.component').then(c => c.PolizasComponent),
+    title: 'Polizas | Kontrola'
+  },
+  { path: 'contacto', loadComponent: () => import('./pages/contacto/contacto.component').then(c => c.ContactoComponent), title: 'Contacto | Kontrola' },
+  { path: 'industria', loadComponent: () => import('./pages/industria/industria.component').then(c => c.IndustriaComponent), title: 'Industria | Kontrola' },
+  { path: 'construccion', loadComponent: () => import('./pages/construccion/construccion.component').then(c => c.ConstruccionComponent), title: 'Construcción | Kontrola' },
   { path: '**', redirectTo: APP_ROUTES.HOME }
 ];
