@@ -26,8 +26,8 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/polizas/polizas.component').then(c => c.PolizasComponent),
     title: 'Polizas | Kontrola'
   },
-  { path: 'contacto', loadComponent: () => import('./pages/contacto/contacto.component').then(c => c.ContactoComponent), title: 'Contacto | Kontrola' },
-  { path: 'industria', loadComponent: () => import('./pages/industria/industria.component').then(c => c.IndustriaComponent), title: 'Industria | Kontrola' },
-  { path: 'construccion', loadComponent: () => import('./pages/construccion/construccion.component').then(c => c.ConstruccionComponent), title: 'Construcción | Kontrola' },
+  { path: 'contacto', loadComponent: () => import('./pages/contacto/contacto.component').then(c => c.ContactoComponent) },
+  { path: 'industria', loadComponent: () => import('./pages/industria/industria.component').then(c => c.IndustriaComponent) },
+  { path: 'construccion', loadComponent: () => import('./pages/construccion/construccion.component').then(c => c.ConstruccionComponent)},
   { path: '**', redirectTo: APP_ROUTES.HOME }
 ];
