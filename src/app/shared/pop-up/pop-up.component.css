@@ -2,3 +2,9 @@ img.imgPop {
     width: 90%;
     border-radius: 13px;
 }
+button.btn.btn-secondary.me-5.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-button-base {
+    font-size: 1em;
+    color: white;
+    background-color: #db2b0d;
+    margin-top: 20px;
+}

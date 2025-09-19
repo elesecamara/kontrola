@@ -59,6 +59,6 @@ export class CarruselComponent implements OnInit, OnDestroy {
   startCarousel(): void {
     this.intervalId = setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-    }, 113000);
+    }, 3000);
   }
 }
