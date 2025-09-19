@@ -3,6 +3,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { VigilanciaComponent } from './pages/vigilancia/vigilancia.component';
 import { PolizasComponent } from './pages/polizas/polizas.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { ConstruccionComponent } from './pages/construccion/construccion.component';
+import { IndustriaComponent } from './pages/industria/industria.component';
 
 export const APP_ROUTES = {
   HOME: ''
@@ -17,5 +19,7 @@ export const routes: Routes = [
   { path: 'vigilancia', component: VigilanciaComponent, title: 'Videovigilancia | Kontrola' },
   { path: 'polizas', component: PolizasComponent, title: 'Polizas | Kontrola' },
   { path: 'contacto', component: ContactoComponent, title: 'Contacto | Kontrola' },
+  { path: 'industria', component: IndustriaComponent, title: 'Industria | Kontrola' },
+  { path: 'construccion', component: ConstruccionComponent, title: 'Construcción | Kontrola' },
   { path: '**', redirectTo: APP_ROUTES.HOME }
 ];

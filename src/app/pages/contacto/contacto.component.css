@@ -53,6 +53,13 @@
 }
 
 /* --- ESTILOS PARA LA SECCIÓN DE CONTACTO --- */
+img.ms-3.logoContacto {
+    width: 50%;
+    /* margin: 0 auto; */
+    margin-bottom: 30px;
+    border-bottom: 1px #1f1f7c85 solid;
+    padding-bottom: 20px;
+}
 .contact-section {
   position: relative;
   background-image: url('https://via.placeholder.com/1920x1080.png?text=Fondo+con+persona'); /* Cambia por la ruta a tu imagen de fondo */

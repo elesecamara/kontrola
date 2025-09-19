@@ -18,9 +18,10 @@ nav.navbar {
   font-weight: bold;
 }
 .header-padding {
-  height: 101px; /* ¡SE AJUSTA ESTE VALOR A LA ALTURA TOTAL DE  HEADER! */
+  height: 73px; /* ¡SE AJUSTA ESTE VALOR A LA ALTURA TOTAL DE  HEADER! */
 }
 .navbar-expand-lg .navbar-collapse {justify-content: flex-end;}
+.nav-link{color: white;}
 @media (max-width: 991.98px) {
   .header-padding {
     /* Podrías necesitar un valor ligeramente diferente cuando el menú está colapsado */

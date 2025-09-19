@@ -2,17 +2,10 @@
   <!--<div class="slides-wrapper">-->
   <div class="slides-wrapper" >
     <div *ngFor="let slide of slides" class="slide" [ngStyle]="{'transform': 'translateX(-' + currentIndex * 100 + '%)'}" [style.backgroundImage]="'url(' + slide.bgImage + ')'">
-      <div class="slide-column left" >
-        <div class="left-content">
-          <img [src]="slide.logo" alt="Logo" class="slide-logo">
-          <h1>{{ slide.title }}</h1>
-        </div>
+      <div class="container txtContainer">
+      <div class="row"><img src="/assets/img/logoNew.svg" alt="Logo" class="slide-logo"></div>
+      <div class="row txtos"><h1>Te ayudamos a tener mayor:<span>{{ slide.subtitle }}</span></h1></div>
       </div>
-
-      <div class="slide-column right">
-        <h2>{{ slide.subtitle }}</h2>
-      </div>
-
     </div>
   </div>
 </div>

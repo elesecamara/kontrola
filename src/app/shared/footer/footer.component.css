@@ -4,6 +4,8 @@ footer {
     background-position: center top;
     background-size: 100% auto;
     background-repeat: no-repeat;
+        z-index: 3;
+    position: relative;
 }
 footer .row {
     padding-right: 0;

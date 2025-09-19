@@ -9,47 +9,47 @@
       <div class="collapse navbar-collapse" id="navbarPrincipal">
         <ul class="navbar-nav">
           <li class="nav-item" *ngIf="!isHome">
-            <a class="nav-link" [routerLink]="ROUTES.HOME" routerLinkActive="active">Inicio</a>
+            <a class="nav-link" [routerLink]="ROUTES.HOME" >Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="ROUTES.HOME" routerLinkActive="active">Soluciones</a>
+            <a class="nav-link" (click)="irASoluciones()" >Soluciones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="ROUTES.HOME" routerLinkActive="active">Industria</a>
+            <a class="nav-link" (click)="irAServicios()" >Servicios</a>
+          </li>
+        <!--  <li class="nav-item">
+            <a class="nav-link"  [routerLink]="['/industria']" >Industria</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="ROUTES.HOME" routerLinkActive="active">Construcción</a>
+            <a class="nav-link" [routerLink]="['/construccion']" >Construcción</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/polizas']" >Mantenimiento</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="ROUTES.HOME" routerLinkActive="active">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/polizas']" routerLinkActive="active">Polizas de mantenimiento</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/contacto']" routerLinkActive="active">Contacto</a>
+            <a class="nav-link" [routerLink]="['/contacto']" >Contacto</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="sub-nav d-flex justify-content-end align-items-center py-1 color-oscuro">
-    <ul class="nav">
+   <!--<div class="sub-nav d-flex justify-content-end align-items-center py-1 color-oscuro">
+   <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/vigilancia']" routerLinkActive="active">VIDEOVIGILANCIA</a>
+        <a class="nav-link" [routerLink]="['/vigilancia']" >VIDEOVIGILANCIA</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/ruta-construccion']" routerLinkActive="active">CABLEADO ESTRUCTURADO</a>
+        <a class="nav-link" [routerLink]="['/ruta-construccion']" >CABLEADO ESTRUCTURADO</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/ruta-industria']" routerLinkActive="active">CONTROL DE ACCESO</a>
+        <a class="nav-link" [routerLink]="['/ruta-industria']" >CONTROL DE ACCESO</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/ruta-construccion']" routerLinkActive="active">DETECCIÓN DE INCENDIO</a>
+        <a class="nav-link" [routerLink]="['/ruta-construccion']" >DETECCIÓN DE INCENDIO</a>
       </li>
     </ul>
-  </div>
+  </div>-->
 
 </header>
 

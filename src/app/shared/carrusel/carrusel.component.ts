@@ -21,19 +21,25 @@ export class CarruselComponent implements OnInit, OnDestroy {
       bgImage: '/assets/img/slide1.jpg',
       logo: '/assets/img/logoK.svg', 
       title: 'Cambia la forma en que tu empresa entiende la productividad y la seguridad.',
-      subtitle: 'Sistemas de Control de acceso.'
+      subtitle: 'Control de tu Operación'
     },
     {
       bgImage: '/assets/img/slide2.jpg',
       logo: '/assets/img/logoK.svg', 
       title: 'Interfaces Dinámicas',
-      subtitle: 'Interfaces de usuario interactivas y de alto rendimiento.'
+      subtitle: 'Evidencia de las Incidencias.'
     },
     {
       bgImage: '/assets/img/slide3.jpg',
       logo: '/assets/img/logoK.svg', 
       title: 'Ecosistema Versátil',
-      subtitle: 'Un framework progresivo y adaptable a tus necesidades.'
+      subtitle: 'Prevención de Riesgos.'
+    },
+        {
+      bgImage: '/assets/img/slide3.jpg',
+      logo: '/assets/img/logoK.svg', 
+      title: 'Ecosistema Versátil',
+      subtitle: 'Soporte Técnico Especializado'
     }
   ];
 
@@ -53,6 +59,6 @@ export class CarruselComponent implements OnInit, OnDestroy {
   startCarousel(): void {
     this.intervalId = setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-    }, 3000);
+    }, 113000);
   }
 }

@@ -1,9 +1,77 @@
 <h2 mat-dialog-title>{{ data.titulo || 'Información' }}</h2>
 <mat-dialog-content>
   <div *ngIf="data.tipo === 'normal'">
-    <p>Este es el contenido de tu pop-up para las soluciones. Aquí puedes detallar los servicios.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <img src="/assets/img/logoNew.svg" alt="Logo" class="slide-logo">
+        </div>
+        <div class="col">
+          <p>Este es el contenido de tu pop-up para las soluciones. Aquí puedes detallar los servicios.</p>
+        </div>
+      </div>
+    </div>  
   </div>
-
+  <div *ngIf="data.tipo === 'serviciosMantenimiento'">
+          <div class="row">
+        <div class="col">
+            <img src="/assets/img/popMnto.png" alt="Logo" class="imgPop">
+        </div>
+        <div class="col-md-8">
+            <p>Asegura la operatividad de tus equipos. Ofrecemos mantenimiento preventivo y correctivo para que tu seguridad nunca se detenga.</p>          
+        </div>
+      </div>
+  </div>
+  <div *ngIf="data.tipo === 'serviciosAlarmas'">
+          <div class="row">
+        <div class="col">
+            <img src="/assets/img/popAlarma.png" alt="Logo" class="imgPop">
+        </div>
+        <div class="col-md-8">
+          <p>Protege tu perímetro día y noche. Sensores y alarmas que detectan cualquier actividad sospechosa para una respuesta inmediata.</p>
+        </div>
+      </div>   
+  </div>
+  <div *ngIf="data.tipo === 'serviciosAcceso'">
+          <div class="row">
+        <div class="col">
+            <img src="/assets/img/popAcceso.png" alt="Logo" class="imgPop">
+        </div>
+        <div class="col-md-8">
+          <p>Seguridad total en tus accesos. Gestiona de forma centralizada las entradas y salidas de tus instalaciones, manteniendo un registro detallado de cada movimiento.</p>
+        </div>
+      </div>   
+  </div>
+  <div *ngIf="data.tipo === 'serviciosIncendio'">
+          <div class="row">
+        <div class="col">
+            <img src="/assets/img/popIncendio.png" alt="Logo" class="imgPop">
+        </div>
+        <div class="col-md-8">
+          <p>Tu mejor seguro de prevención. Protege a tu personal y tus bienes con alertas tempranas y confiables ante cualquier señal de fuego.</p>
+        </div>
+      </div>   
+  </div>
+  <div *ngIf="data.tipo === 'serviciosCableado'">
+          <div class="row">
+        <div class="col">
+            <img src="/assets/img/popCable.png" alt="Logo" class="imgPop">
+        </div>
+        <div class="col-md-8">
+          <p>Conectividad sin fallas. Diseñamos e implementamos la infraestructura de red que soporta todas tus operaciones críticas de forma eficiente.</p>
+        </div>
+      </div>
+  </div>
+    <div *ngIf="data.tipo === 'serviciosVideo'">
+            <div class="row">
+        <div class="col">
+            <img src="/assets/img/popVideo.png" alt="Logo" class="imgPop">
+        </div>
+        <div class="col-md-8">
+          <p>Supervisa tus procesos y activos en tiempo real. Incrementa la seguridad y la productividad con nuestros sistemas de video de alta definición.</p>
+        </div>
+      </div>
+  </div>
   <div *ngIf="data.tipo === 'politica'">
     <div class="container">
         <h1>Política de Privacidad</h1>
@@ -68,5 +136,6 @@
   </div>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cerrar</button>
+  <button  class="btn btn-secondary me-5 " mat-button mat-dialog-close>Cerrar.</button>
+  <button  onclick="window.open('https://wa.me/7292592585?text=Hola%2C%20me%20interesa%20cotizar%20un%20sistema%20para%20mi%20industria', '_blank')" class="btn btn-primary">Cotiza.</button>
 </mat-dialog-actions>

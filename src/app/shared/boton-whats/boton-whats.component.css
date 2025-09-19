@@ -1,0 +1,11 @@
+img.btnWhats {
+    z-index: 2;
+    position: fixed;
+    width: 90px;
+    right: 10px;
+    bottom: 10px;
+    transition: .3s;
+}
+img.btnWhats:hover {
+    width: 95px;
+}

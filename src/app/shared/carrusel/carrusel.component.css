@@ -3,7 +3,7 @@
   --carousel-height: 500px;
   --animation-speed: 0.6s;
 }
-
+.nav-link { color: rgb(255 255 255)!important;}
 /* Contenedor principal del carrusel */
 .carousel-container {
   width: 100%;
@@ -35,7 +35,7 @@ background-size: cover;
 .slide-column {
   flex: 1; /* Cada columna ocupa el 50% del espacio */
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding: 2rem;
 }
@@ -46,8 +46,9 @@ background-size: cover;
   background-position: center;
   position: relative;
   color: white;
-}
 
+}
+.noView{color: transparent; text-shadow: none;}
 /* Superposición oscura para que el texto sea más legible en la columna izquierda */
 .slide-column.left::before {
   content: '';
@@ -64,10 +65,39 @@ background-size: cover;
   z-index: 2;
   text-align: center;
 }
-.slide-column.left .slide-logo {
-  width: 250px;
+.slide-logo {
+  width: 450px;
   height: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+.container.txtContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5%;
+}
+.row.txtos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.row.txtos h1 {
+    padding-left: 4%;
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.553);
+    color: white;
+}
+.row.txtos span {
+    padding-left: 3%;
+    font-size: 2.0rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.553);
+    color: white;
+    font-weight: 300;
+    background-color: #1c437784;
+    padding: .5% 3%;
+    border-radius: 7px;
+    margin-left: 5px;
 }
 .slide-column.left h1 {
     font-size: 2.2rem;
@@ -81,21 +111,32 @@ background-size: cover;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-      padding-bottom: 4.5%;
+  padding-bottom: 4.5%;
+  padding-left: 0;
 }
 .slide-column.right h2 {
     font-size: 1.8rem;
     font-style: italic;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 83%);
-    text-align: center;
-    max-width: 80%;
+    text-align: left;
+    max-width: 100%;
     background-color: #1c437754;
-    padding: .6% 5%;
+    padding: .6% 0%;
     border-radius: 6px;
 }
+.row.down { height: 26px;}
 /* --- DISEÑO RESPONSIVO --- */
 @media (max-width: 768px) {
+  .row.txtos h1 { padding-left: 4%; font-size: 1.3rem;}
+  .row.txtos span{ padding-left: 1%; font-size: 1.2rem;}
+  .header-padding { height: 75px; }
+  .slide-logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 1.2rem;
+    padding-top: 30px;
+  }
   /* Ajuste de la altura del carrusel en pantallas pequeñas */
   :host {
     --carousel-height: auto;
