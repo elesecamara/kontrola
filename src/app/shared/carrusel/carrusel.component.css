@@ -75,7 +75,7 @@ background-size: cover;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 5%;
+    /*padding-left: 5%;*/
 }
 .row.txtos {
     display: flex;
@@ -83,17 +83,17 @@ background-size: cover;
     width: 100%;
 }
 .row.txtos h1 {
-    padding-left: 4%;
+    /*padding-left: 4%;*/
     font-size: 2.2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.553);
     color: white;
 }
 .row.txtos span {
-    padding-left: 3%;
+    padding-left: 0%;
     font-size: 2.0rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.553);
     color: white;
-    font-weight: 300;
+    font-weight: 400;
     background-color: #1c437784;
     padding: .5% 3%;
     border-radius: 7px;

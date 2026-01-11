@@ -63,4 +63,34 @@ export class HeaderComponent {
       });
     }
   }
+    irAClientes(): void {
+    // Verificamos si ya estamos en el home
+    if (this.isHome) {
+      // Si ya estamos, solo hacemos scroll
+      this.scrollService.scrollTo('clientes');
+    } else {
+      // Si no estamos en home, navegamos primero y LUEGO hacemos scroll
+      this.router.navigate(['/']).then(() => {
+        // Usamos un pequeño delay para asegurar que el home se haya renderizado
+        setTimeout(() => {
+          this.scrollService.scrollTo('clientes');
+        }, 100); 
+      });
+    }
+  }
+      irAMantenemos(): void {
+    // Verificamos si ya estamos en el home
+    if (this.isHome) {
+      // Si ya estamos, solo hacemos scroll
+      this.scrollService.scrollTo('mantenemos');
+    } else {
+      // Si no estamos en home, navegamos primero y LUEGO hacemos scroll
+      this.router.navigate(['/']).then(() => {
+        // Usamos un pequeño delay para asegurar que el home se haya renderizado
+        setTimeout(() => {
+          this.scrollService.scrollTo('mantenemos');
+        }, 100); 
+      });
+    }
+  }
 }

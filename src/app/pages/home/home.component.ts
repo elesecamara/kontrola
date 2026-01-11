@@ -64,7 +64,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.dialog.open(PopUpComponent, {
       width: '80%',
       maxHeight: '80vh',
-      data: { tipo: 'serviciosMantenimiento', titulo: 'Mantenimiento' }
+      data: { tipo: 'serviciosMantenimiento', titulo: 'Tiempo y Asistencia' }
     });
   }
   openAlarmaPopUp(event: MouseEvent): void {
@@ -80,7 +80,15 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.dialog.open(PopUpComponent, {
       width: '80%',
       maxHeight: '80vh',
-      data: { tipo: 'serviciosAcceso', titulo: 'Control de acceso' }
+      data: { tipo: 'serviciosAcceso', titulo: 'Acceso Peatonal' }
+    });
+  }
+  openAccesoVPopUp(event: MouseEvent): void {
+    event.preventDefault();
+    this.dialog.open(PopUpComponent, {
+      width: '80%',
+      maxHeight: '80vh',
+      data: { tipo: 'serviciosAccesoV', titulo: 'Acceso Vehicular' }
     });
   }
   openIncendioPopUp(event: MouseEvent): void {

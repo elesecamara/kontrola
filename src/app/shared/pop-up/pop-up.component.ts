@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 
 // Define una interfaz para la data
 export interface PopUpData {
-  tipo: 'normal' | 'politica'| 'serviciosMantenimiento'| 'serviciosAlarmas'| 'serviciosAcceso'| 'serviciosIncendio'| 'serviciosCableado'| 'serviciosVideo';
+  tipo: 'normal' | 'politica'| 'serviciosMantenimiento'| 'serviciosAlarmas'| 'serviciosAcceso'| 'serviciosAccesoV'| 'serviciosIncendio'| 'serviciosCableado'| 'serviciosVideo';
   titulo?: string;
 }
 

@@ -18,25 +18,25 @@ export class CarruselComponent implements OnInit, OnDestroy {
   // Define aquí los datos para cada slide del carrusel
   slides = [
     {
-      bgImage: '/assets/img/slide1.jpg',
+      bgImage: '/assets/img/slide1.png',
       logo: '/assets/img/logoK.svg', 
       title: 'Cambia la forma en que tu empresa entiende la productividad y la seguridad.',
       subtitle: 'Control de tu Operación'
     },
     {
-      bgImage: '/assets/img/slide2.jpg',
+      bgImage: '/assets/img/slide2.png',
       logo: '/assets/img/logoK.svg', 
       title: 'Interfaces Dinámicas',
       subtitle: 'Evidencia de las Incidencias.'
     },
     {
-      bgImage: '/assets/img/slide3.jpg',
+      bgImage: '/assets/img/slide3.png',
       logo: '/assets/img/logoK.svg', 
       title: 'Ecosistema Versátil',
       subtitle: 'Prevención de Riesgos.'
     },
         {
-      bgImage: '/assets/img/slide3.jpg',
+      bgImage: '/assets/img/slide4.png',
       logo: '/assets/img/logoK.svg', 
       title: 'Ecosistema Versátil',
       subtitle: 'Soporte Técnico Especializado'

@@ -12,10 +12,16 @@
             <a class="nav-link" [routerLink]="ROUTES.HOME" >Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" (click)="irASoluciones()" >Soluciones</a>
+            <a class="nav-link" (click)="irASoluciones()" >Soluciones </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" (click)="irAServicios()" >Servicios</a>
+            <a class="nav-link" (click)="irAServicios()" >Servicios </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="irAMantenemos()" > Mantenimiento </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="irAServicios()" > Proyectos </a>
           </li>
         <!--  <li class="nav-item">
             <a class="nav-link"  [routerLink]="['/industria']" >Industria</a>
@@ -24,7 +30,7 @@
             <a class="nav-link" [routerLink]="['/construccion']" >Construcción</a>
           </li>-->
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/polizas']" >Mantenimiento</a>
+            <a class="nav-link" (click)="irAClientes()" > Clientes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/contacto']" >Contacto</a>

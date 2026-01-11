@@ -47,8 +47,10 @@ section {
 }
 .subtitulo {
     color: var(--color-titulos);
-    font-weight:600;
+    font-weight:400;
     font-size: 1.5em;
+    text-align: justify;
+    width: 99%;
 }
 /*grid*/
 /* Estilos para la sección completa */
@@ -57,7 +59,11 @@ section {
   margin: 2rem auto; /* Centra la sección en la página */
   padding: 0 1rem;
 }
-
+.grid-sectionXL {
+  max-width: 95%;
+  margin: 2rem auto; /* Centra la sección en la página */
+  padding: 0 1rem;
+}
 .grid-container {
   display: grid;
   /* La magia principal: 4 columnas de igual tamaño */
@@ -202,6 +208,18 @@ section {
 .cta h2 {
     color: white;
     margin-bottom: 0;
+}
+.cardSM{
+  background-color: aliceblue;
+    margin: 0 auto;
+    border-radius: 4px;
+    text-align: center;
+}
+.imgLogoC {
+height: 200px;
+    background-size: cover;
+    margin: 10px;
+    width: 15%;
 }
 /* --- LA MAGIA RESPONSIVA --- */
 /* Para Tablets (hasta 1024px) */
