@@ -66,9 +66,10 @@ background-size: cover;
   text-align: center;
 }
 .slide-logo {
-  width: 450px;
+  width: 400px;
   height: auto;
   margin-bottom: 1.8rem;
+  margin-left: 40px;
 }
 .container.txtContainer {
     display: flex;
@@ -89,15 +90,14 @@ background-size: cover;
     color: white;
 }
 .row.txtos span {
-    padding-left: 0%;
     font-size: 2.0rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.553);
     color: white;
-    font-weight: 400;
-    background-color: #1c437784;
-    padding: .5% 3%;
+    font-weight: 200;
+    background-color: #1c4377b3;
+    padding: .3% 1%;
     border-radius: 7px;
-    margin-left: 5px;
+    margin-left: 105px;
 }
 .slide-column.left h1 {
     font-size: 2.2rem;

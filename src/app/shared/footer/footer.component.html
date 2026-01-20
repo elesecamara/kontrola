@@ -1,6 +1,35 @@
 <footer>
 <div class="row">
-    <div class="col-md-5 logo-pie"><img src="/assets/img/logoK.svg" alt="logo Kontrola"></div>
+    <div class="col footer-container">
+            <div class="footer-col contact-form">
+                <h3>Contáctanos</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="nombre" class="form-input" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-input" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="telefono" class="form-input" placeholder="Teléfono (Opcional)">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensaje" class="form-input" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">ENVIAR MENSAJE</button>
+                </form>
+            </div>
+
+    </div><!--FIN FORMULARIO-->
+    <div class="col mapa-contenedor">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60268.66779471131!2d-99.68652055685515!3d19.289650239091666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd89892a50bf95%3A0x16866444821034d6!2sToluca%20de%20Lerdo%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1705700000000!5m2!1ses-419!2smx" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+   <!-- <div class="col-md-5 logo-pie"><img src="/assets/img/logoK.svg" alt="logo Kontrola"></div>
     <div class="col-md-7 contacto-pie">
         <div class="row pata">
             <div class="col-md-3">
@@ -27,6 +56,6 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div>-->
 </div>
 </footer>

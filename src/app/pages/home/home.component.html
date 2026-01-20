@@ -1,13 +1,16 @@
 <app-carrusel></app-carrusel>
 <app-boton-whats></app-boton-whats>
-<section class="gris" id="soluciones">
-    <h1 class="sectionIcn">¿Qué solucionamos?</h1>
-    <h2 class="subtitulo mt-3 mb-3 ps-5 pe-5" >En el Sector Industrial, los riesgos de seguridad que corren las empresas son internos, principalmente
-relacionados con áreas de oportunidad en su operación, lo que les genera costos adicionales que, de
-uno en uno parecen pequeños, pero que en la suma anual llegan a cifras que asustan.</h2>
+<section class="gris" id="soluciones bgSoluciones">
+    <h1 class=""><img src="/assets/img/icn_vde.png"></h1>
+    <h1 class="tituloSection">¿Qué solucionamos?</h1>
+    <h2 class="subtituloDos mt-3 mb-3 ps-5 pe-5" >En el Sector Industrial, los <span>riesgos de seguridad </span> que corren las empresas son internos, principalmente
+relacionados con áreas de oportunidad en su operación, lo que les genera <span>costos adicionales </span>que, de
+uno en uno parecen pequeños, pero que en la suma anual llegan a cifras que asustan.<br>
+Entre las <span> incidencias </span>que más nos encontramos están:
+</h2>
     
     <div class="grid-sectionXL  mt-4">
-        <h1 class="mb-2 subtitulo "><strong>Entre las incidencias que más nos encontramos están:</strong> </h1>
+        <h1 class="mb-2 subtitulo "><strong></strong> </h1>
         <div class="grid-container">
 
             <div class="grid-item" style="background-image: url('/assets/img/nohay-tiempos-muertos.png');">
@@ -40,15 +43,15 @@ uno en uno parecen pequeños, pero que en la suma anual llegan a cifras que asus
 
             <div class="grid-item" style="background-image: url('/assets/img/nohay-merma.png');">
             <div class="card-content">
-                <h3>Merma excesiva</h3>
+                <h3>Merma Excesiva</h3>
                 <p>¿Cuánto te costaron todos esos cortes mal hechos?</p>
             </div>
             </div>
 
             <div class="grid-item" style="background-image: url('/assets/img/nohay-maq-danada.png');">
             <div class="card-content">
-                <h3>Daño a maquinaria</h3>
-                <p>¿Cuánto te costó para la producción?</p>
+                <h3>Daño a Maquinaria</h3>
+                <p>¿Cuánto te costó parar la producción?</p>
             </div>
             </div>
 
@@ -69,44 +72,45 @@ uno en uno parecen pequeños, pero que en la suma anual llegan a cifras que asus
         </div>
     </div>
 </section>
-<section class="bnco" id="servicios">
-    <h1 class="sectionIcn mb-3">¿Cómo lo hacemos?</h1>
-        <h2 class="subtitulo mt-3 mb-3 ps-5 pe-5" >
-            Para que realmente podamos crear un antes y un después, nos adentramos en su operación, para
+<section class="bnco bgHacemos" id="servicios">
+        <h1 class=""><img src="/assets/img/icn_vde.png"></h1>
+    <h1 class="tituloSection">¿Cómo lo hacemos?</h1>
+        <h2 class="subtituloDos mt-3 mb-3 ps-5 pe-5" >
+            Para que realmente podamos crear un antes y un después, nos <span>adentramos en su operación</span>, para
             conocer sus áreas críticas, sus riesgos, sus procesos, y sus alcances, para así poder diseñar una
-            buena propuesta de mejora.<br><br>
+            buena propuesta de <span>mejora</span>.<br>
             Estas Soluciones las logramos mediante la correcta implementación de una combinación de diversos
-            Sistemas de Seguridad Electrónicos, entre los que están:
+            <span>Sistemas de Seguridad Electrónicos</span>, entre los que están:
         </h2>
-    <div class="grid-section-dos mt-5">
+    <div class="grid-sectionXL  mt-4">
         <div class="grid-container-dos">
 
             <div class="grid-item-dos" style="background-image: url('/assets/img/soluciones-vigilancia.png');">
             <div class="card-content-dos">
                 <h3>Videovigilancia</h3>
                 <p> Conoce lo que pasa en tu operación</p>
-                <a (click)="openVideoPopUp($event)"><p class="mt-3">Aprende más →</p></a>
+                <a (click)="openVideoPopUp($event)"><p class="mt-3 btncard">Aprende más →</p></a>
             </div>
             </div><!--Fin item-->
             <div class="grid-item-dos" style="background-image: url('/assets/img/acceso-peatonal.png');">
             <div class="card-content-dos">
                 <h3>Acceso Peatonal</h3>
                 <p>Sólo personal autorizado y calificado</p>
-                <a (click)="openAccesoPopUp($event)"><p class="mt-3">Aprende más →</p></a>
+                <a (click)="openAccesoPopUp($event)"><p class="mt-3 btncard">Aprende más →</p></a>
             </div>
             </div><!--Fin item-->
             <div class="grid-item-dos" style="background-image: url('/assets/img/soluciones-acceso.png');">
             <div class="card-content-dos">
                 <h3>Acceso Vehicular</h3>
                 <p>Limita el acceso a tu perímetro</p>
-                <a (click)="openAccesoVPopUp($event)"><p class="mt-3">Aprende más →</p></a>
+                <a (click)="openAccesoVPopUp($event)"><p class="mt-3 btncard">Aprende más →</p></a>
             </div>
             </div><!--Fin item-->
             <div class="grid-item-dos" style="background-image: url('/assets/img/biometrico.png');">
             <div class="card-content-dos">
                 <h3>Tiempo y Asistencia</h3>
                 <p>Obtén turnos completos de trabajo</p>
-                <a (click)="openMntoPopUp($event)"><p class="mt-3">Aprende más →</p></a>
+                <a (click)="openMntoPopUp($event)"><p class="mt-3 btncard">Aprende más →</p></a>
             </div>
             </div><!--Fin item-->
             <!--<div class="grid-item-dos" style="background-image: url('/assets/img/soluciones-intrusion.png');">
@@ -119,16 +123,16 @@ uno en uno parecen pequeños, pero que en la suma anual llegan a cifras que asus
 
             <div class="grid-item-dos" style="background-image: url('/assets/img/soluciones-alarma.png');">
             <div class="card-content-dos">
-                <h3>Detección de incendios</h3>
+                <h3>Detección de Incendios</h3>
                 <p>Prevén tragedias.</p>
-                <a (click)="openIncendioPopUp($event)"><p class="mt-3">Aprende más →</p></a>
+                <a (click)="openIncendioPopUp($event)"><p class="mt-3 btncard">Aprende más →</p></a>
             </div>
             </div><!--Fin item-->            
             <div class="grid-item-dos" style="background-image: url('/assets/img/soluciones-cableado.png');">
             <div class="card-content-dos">
-                <h3>Cableado estructurado</h3>
+                <h3>Cableado Estructurado</h3>
                 <p>Conecta tu operación</p>
-                <a (click)="openCableadoPopUp($event)"><p class="mt-3">Aprende más →</p></a>
+                <a (click)="openCableadoPopUp($event)"><p class="mt-3 btncard">Aprende más →</p></a>
             </div>
             </div><!--Fin item-->
         </div>
@@ -145,7 +149,7 @@ uno en uno parecen pequeños, pero que en la suma anual llegan a cifras que asus
         <div class="container">
             <div class="row" style=" margin: 0 auto; width: 80%; ">
                 <div class="col"></div>
-                <div class="col-md-6 p-2 cardSM" ><h5><strong class="me-3">Póliza Anual de Servicio y Mantenimiento </strong><strong> LP</strong></h5></div>
+                <div class="col-md-6 p-2 cardSM" ><img src="/assets/img/polizas.png"></div>
                 <div class="col"></div>                
             </div>
         </div>
@@ -154,15 +158,17 @@ uno en uno parecen pequeños, pero que en la suma anual llegan a cifras que asus
 <section class="bnco" id="servicios">
         <h1 class="sectionIcn mb-3">Proyectos</h1>
         <div class="container">
-            <table class="table">
-            <!--<thead>
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-                </tr>
-            </thead>-->
+            <div class="row">
+                <div class="col proyectCard"><img src="/assets/img/inge.png"></div>
+                <div class="col proyectCard"><img src="/assets/img/imple.png"></div>
+                <div class="col proyectCard"><img src="/assets/img/reac.png"></div>
+            </div>
+            <div class="row">
+                <div class="col proyectCard"><img src="/assets/img/ampli.jpg"></div>
+                <div class="col proyectCard"><img src="/assets/img/moder.jpg"></div>
+
+            </div>
+          <!-- <table class="table">
             <tbody>
                 <tr>            
                     <td>Ingeniería</td>
@@ -195,7 +201,7 @@ uno en uno parecen pequeños, pero que en la suma anual llegan a cifras que asus
                     <td>LP</td>
                 </tr>
             </tbody>
-            </table>
+            </table>--> 
         </div>   
 </section>
 <section class="gris" id="clientes">
@@ -215,7 +221,7 @@ uno en uno parecen pequeños, pero que en la suma anual llegan a cifras que asus
                 <div class="col-md-2 imgLogoC"  style="background-image: url('/assets/img/logo9.png');"></div>
                 <div class="col-md-2 imgLogoC"  style="background-image: url('/assets/img/logo10.png');"></div>
                 <div class="col-md-2 imgLogoC"  style="background-image: url('/assets/img/logo1.png');"></div>
-                <!--<div class="col-md-2 imgLogoC"  style="background-image: url('/assets/img/logo6.png');"></div>-->
+                <div class="col-md-2 imgLogoC"  style="background-image: url('/assets/img/crown.png');"></div>
             </div>
         </div>
 </section>
@@ -249,7 +255,7 @@ a su mínima expresión.</p>
             </div>
         </div>
     </div>
-</section>-->
+</section>
 <section class="last">
     <div class="row">
         <div class="col"></div>
@@ -259,4 +265,4 @@ a su mínima expresión.</p>
             
         </div>
     </div>
-</section>
+</section>-->

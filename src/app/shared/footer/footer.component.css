@@ -6,6 +6,7 @@ footer {
     background-repeat: no-repeat;
         z-index: 3;
     position: relative;
+    padding: 20px;
 }
 footer .row {
     padding-right: 0;
@@ -45,6 +46,93 @@ li.pie-titulo {
     margin-right: 8px;
     height: 20px;
 }
+/* Estilos para que el mapa sea responsivo */
+        .mapa-contenedor {
+            position: relative;
+            width: 100%;
+            padding-bottom: 26.25%; /* Proporción 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+        .mapa-contenedor iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+/* Columnas (Formulario y Mapa) */
+    .footer-col {
+        flex: 1 1 300px; /* Crece, se encoge, base de 300px */
+        min-width: 300px;
+    }
+
+    /* Estilos del Formulario */
+    .contact-form h3 {
+        color: #00AEEF; /* Azul similar a tus imágenes */
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-input {
+        width: 90%;
+        padding: 5px;
+        border: 1px solid #444;
+        background-color: #333;
+        color: #fff;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    .form-input:focus {
+        outline: none;
+        border-color: #00AEEF;
+    }
+
+    textarea.form-input {
+        height: 100px;
+        resize: vertical;
+    }
+
+    .btn-submit {
+        background-color: #00AEEF;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s;
+        width: 90%;
+    }
+
+    .btn-submit:hover {
+        background-color: #008cbf;
+    }
+
+    /* Estilos del Mapa para que llene su columna */
+    .map-wrapper {
+        width: 100%;
+        height: 100%;
+        min-height: 300px; /* Altura mínima para que se vea bien en móvil */
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .map-wrapper iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+    }
+
+
 @media (max-width: 768px) {
     .logo-pie img {  width: 170px;}
     footer{ background-size: 100% 100%; padding-top: 6%;}
