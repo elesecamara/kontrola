@@ -128,18 +128,19 @@ background-size: cover;
 .row.down { height: 26px;}
 /* --- DISEÑO RESPONSIVO --- */
 @media (max-width: 768px) {
+  .container.txtContainer { padding-top: 40px; }
   .row.txtos h1 { padding-left: 4%; font-size: 1.3rem;}
-  .row.txtos span{ padding-left: 1%; font-size: 1.2rem;}
+  .row.txtos span{ padding-left: 1%; font-size: 1.2rem; margin-left: 10px; display: inline-block; margin-top: 10px;}
   .header-padding { height: 75px; }
   .slide-logo {
-    width: 300px;
+    width: 250px; /* Reducido un poco para móviles */
     height: auto;
     margin-bottom: 1.2rem;
     padding-top: 30px;
   }
   /* Ajuste de la altura del carrusel en pantallas pequeñas */
   :host {
-    --carousel-height: auto;
+    --carousel-height: 380px;
   }
 
   /* Apila las columnas verticalmente en pantallas pequeñas */

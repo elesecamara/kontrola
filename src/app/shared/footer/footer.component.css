@@ -1,151 +1,381 @@
+/* ===== FOOTER PRINCIPAL ===== */
 footer {
-    min-height: 300px;
-        background-image: url(/assets/img/pie.jpg);
-    background-position: center top;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-        z-index: 3;
-    position: relative;
-    padding: 20px;
+  background: linear-gradient(135deg, #1c4377 0%, #0f2c52 100%);
+  color: white;
+  z-index: 3;
+  position: relative;
+  padding: 3rem 2rem;
 }
-footer .row {
-    padding-right: 0;
-    padding-left: 0;
+
+/* ===== CONTENEDOR PRINCIPAL: FORMULARIO + MAPA ===== */
+.footer-main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  padding: 0 0 2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== SECCIÓN DE FORMULARIO ===== */
+.footer-contact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #00AEEF;
+  padding-bottom: 0.5rem;
+}
+
+.footer-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.form-group-footer {
+  display: flex;
+}
+
+.form-input-footer {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  background-color: #ffffff;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.form-input-footer:focus {
+  outline: none;
+  border-color: #00AEEF;
+  box-shadow: 0 0 0 2px rgba(0, 174, 239, 0.2);
+}
+
+.form-input-footer::placeholder {
+  color: #999;
+}
+
+textarea.form-input-footer {
+  resize: vertical;
+  min-height: 60px;
+  font-family: inherit;
+}
+
+.footer-form-actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.btn-footer-enviar,
+.btn-footer-whatsapp {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-footer-enviar {
+  background-color: #00AEEF;
+  color: #1c4377;
+}
+
+.btn-footer-enviar:hover {
+  background-color: #00a0d5;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-footer-whatsapp {
+  background-color: #25d366;
+  color: white;
+}
+
+.btn-footer-whatsapp:hover {
+  background-color: #1fbb54;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== SECCIÓN DEL MAPA COMPACTO ===== */
+.footer-map-compact {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-map-compact iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ===== CONTENIDO ORIGINAL (BRAND, LINKS, SERVICIOS) ===== */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+}
+
+/* ===== SECCIONES ===== */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #00AEEF;
+  padding-bottom: 0.5rem;
+}
+
+/* ===== SECCIÓN BRAND ===== */
+.footer-brand {
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 250px;
+  margin-bottom: 1rem;
+}
+
+.footer-description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.footer-contact-quick {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.footer-contact-quick a {
+  color: #00AEEF;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.3s ease;
+}
+
+.footer-contact-quick a:hover {
+  color: #ffffff;
+}
+
+/* ===== SECCIONES DE LINKS ===== */
+.footer-links ul,
+.footer-services ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-services li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links a,
+.footer-services a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-services a:hover {
+  color: #00AEEF;
+}
+
+/* ===== FOOTER BOTTOM ===== */
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+/* ===== RESPONSIVO ===== */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  .footer-main-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer-map-compact {
+    max-width: 400px;
     margin: 0 auto;
+  }
 }
-.logo-pie
- {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    /* width: 50px; */
+
+/* Tablet pequeño (600px - 767px) */
+@media (max-width: 767px) {
+  footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-main-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-section-title {
+    font-size: 1rem;
+  }
+
+  .footer-map-compact {
+    max-width: 100%;
+  }
+
+  .form-input-footer {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .btn-footer-enviar,
+  .btn-footer-whatsapp {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.8rem;
+  }
 }
-.logo-pie img{
-    width: 250px; 
+
+/* Celular (hasta 599px) */
+@media (max-width: 599px) {
+  footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-main-container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .footer-logo {
+    width: 200px;
+  }
+
+  .footer-section-title,
+  .footer-contact-title {
+    font-size: 0.95rem;
+  }
+
+  .footer-description {
+    font-size: 0.85rem;
+  }
+
+  .footer-contact-quick a,
+  .footer-links a,
+  .footer-services a {
+    font-size: 0.85rem;
+  }
+
+  .form-input-footer {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+
+  .footer-form-actions {
+    gap: 0.5rem;
+  }
+
+  .btn-footer-enviar,
+  .btn-footer-whatsapp {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .footer-map-compact {
+    padding-bottom: 100%;
+  }
 }
-.contacto-pie .row .col {
-    display: flex;
-    justify-content: flex-end;
-}
-.contacto-pie { align-content: center; padding-right: 3rem}
-.pata {
-    color: white;
-}
-.pata ul{
-    list-style: none;
-}
-li.pie-titulo {
-    color: var(--color-contraste-nja);
-}
-.txtPie{
-    font-size: .8em;
-}
-.txtPie img {
-    width: 20px;
-    margin-right: 8px;
-    height: 20px;
-}
-/* Estilos para que el mapa sea responsivo */
-        .mapa-contenedor {
-            position: relative;
-            width: 100%;
-            padding-bottom: 26.25%; /* Proporción 16:9 */
-            height: 0;
-            overflow: hidden;
-        }
-        .mapa-contenedor iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
 
-/* Columnas (Formulario y Mapa) */
-    .footer-col {
-        flex: 1 1 300px; /* Crece, se encoge, base de 300px */
-        min-width: 300px;
-    }
+/* Muy pequeño (< 400px) */
+@media (max-width: 399px) {
+  footer {
+    padding: 1rem 0.5rem;
+  }
 
-    /* Estilos del Formulario */
-    .contact-form h3 {
-        color: #00AEEF; /* Azul similar a tus imágenes */
-        margin-top: 0;
-        margin-bottom: 15px;
-    }
+  .footer-main-container,
+  .footer-content {
+    gap: 1rem;
+    margin: 0 auto 1rem;
+  }
 
-    .form-group {
-        margin-bottom: 15px;
-    }
+  .footer-section-title,
+  .footer-contact-title {
+    font-size: 0.85rem;
+  }
 
-    .form-input {
-        width: 90%;
-        padding: 5px;
-        border: 1px solid #444;
-        background-color: #333;
-        color: #fff;
-        border-radius: 6px;
-        box-sizing: border-box;
-    }
+  .form-input-footer {
+    font-size: 0.7rem;
+    padding: 0.4rem;
+  }
 
-    .form-input:focus {
-        outline: none;
-        border-color: #00AEEF;
-    }
+  .btn-footer-enviar,
+  .btn-footer-whatsapp {
+    font-size: 0.65rem;
+    padding: 0.4rem 0.5rem;
+  }
 
-    textarea.form-input {
-        height: 100px;
-        resize: vertical;
-    }
-
-    .btn-submit {
-        background-color: #00AEEF;
-        color: white;
-        border: none;
-        padding: 12px 25px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: bold;
-        transition: background 0.3s;
-        width: 90%;
-    }
-
-    .btn-submit:hover {
-        background-color: #008cbf;
-    }
-
-    /* Estilos del Mapa para que llene su columna */
-    .map-wrapper {
-        width: 100%;
-        height: 100%;
-        min-height: 300px; /* Altura mínima para que se vea bien en móvil */
-        border-radius: 8px;
-        overflow: hidden;
-    }
-    
-    .map-wrapper iframe {
-        width: 100%;
-        height: 100%;
-        border: 0;
-        display: block;
-    }
-
-
-@media (max-width: 768px) {
-    .logo-pie img {  width: 170px;}
-    footer{ background-size: 100% 100%; padding-top: 6%;}
-    .contacto-pie { align-content: center; padding-right: .1rem}
-    ul {padding-left: .2rem;}
-    .txtPie {  font-size: .6em;}
-    .txtPie img {  width: 10px;}
-}
-@media (max-width: 600px) {
-    footer {  background-size: 100% 100%;}
-    .logo-pie img { width: 150px;}
-    .txtPie { font-size: .76em;}
-    li.pie-titulo {font-size: .85em;}
-    .txtPie img {  width: 15px;}
+  .footer-logo {
+    width: 160px;
+  }
 }
 

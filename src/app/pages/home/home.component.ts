@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CarruselComponent } from "../../shared/carrusel/carrusel.component";
+import { ClientesCarruselComponent } from "../../shared/clientes-carrusel/clientes-carrusel.component";
 import { CommonModule } from '@angular/common';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
@@ -10,7 +11,7 @@ import { BotonWhatsComponent } from "../../shared/boton-whats/boton-whats.compon
 
 @Component({
   selector: 'app-home',
-  imports: [CarruselComponent, CommonModule, MatDialogModule, BotonWhatsComponent],
+  imports: [CarruselComponent, ClientesCarruselComponent, CommonModule, MatDialogModule, BotonWhatsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

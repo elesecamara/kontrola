@@ -3,10 +3,89 @@
   font-size: 2.5rem;
 }
 
-/* --- ESTILOS PARA LAS TARJETAS DE PLANES --- */
-.card {
-  border-radius: 1rem;
-  border: 1px solid #e9ecef;
+.contact-form-complete {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #1c4377;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  display: block;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #1c4377;
+  box-shadow: 0 0 0 3px rgba(28, 67, 119, 0.1);
+  outline: none;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.form-actions .btn {
+  flex: 1;
+  min-width: 150px;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.875rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.form-actions .btn-primary {
+  background-color: #1c4377;
+  border-color: #1c4377;
+  color: white;
+}
+
+.form-actions .btn-primary:hover {
+  background-color: #0f2c52;
+  border-color: #0f2c52;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(28, 67, 119, 0.3);
+}
+
+.form-actions .btn-success {
+  background-color: #25d366;
+  border-color: #25d366;
+  color: white;
+}
+
+.form-actions .btn-success:hover {
+  background-color: #1fbb54;
+  border-color: #1fbb54;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
 
 .plan-title {
@@ -97,4 +176,67 @@ img.ms-3.logoContacto {
   background-color: #f8f9fa;
   border: 1px solid #dee2e6;
   padding: 0.75rem 1rem;
+}
+
+/* ===== RESPONSIVIDAD ===== */
+
+@media (max-width: 768px) {
+  img.ms-3.logoContacto {
+    width: 70%;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+
+  .contact-form-card {
+    margin: 1rem;
+    padding: 1.5rem !important;
+  }
+
+  .card-header-custom {
+    margin-bottom: 1.5rem;
+  }
+
+  .card-body-custom h4 {
+    font-size: 1.2rem;
+  }
+
+  .card-body-custom h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  img.ms-3.logoContacto {
+    width: 80%;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+
+  .contact-form-card {
+    margin: 0.5rem;
+    padding: 1rem !important;
+  }
+
+  .card-body-custom h4 {
+    font-size: 1rem;
+  }
+
+  .card-body-custom h5 {
+    font-size: 0.9rem;
+  }
+
+  .card-body-custom p {
+    font-size: 0.85rem;
+  }
+
+  .form-control,
+  .form-select {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
 }

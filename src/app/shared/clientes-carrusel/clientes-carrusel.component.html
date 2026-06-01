@@ -1,0 +1,26 @@
+<div class="clientes-carrusel-container">
+  <div class="carrusel-wrapper">
+    <!-- Contenedor de slides con animación -->
+    <div class="carrusel-track" [style.transform]="'translateX(-' + (currentIndex * (100 / itemsPerView)) + '%)'">
+      <div *ngFor="let cliente of clientes" class="carrusel-slide">
+        <div class="logo-container" [style.backgroundImage]="'url(' + cliente.logo + ')'"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controles de navegación -->
+  <button class="nav-btn prev-btn" (click)="prevSlide()" aria-label="Anterior">
+    <span>&lt;</span>
+  </button>
+  <button class="nav-btn next-btn" (click)="nextSlide()" aria-label="Siguiente">
+    <span>&gt;</span>
+  </button>
+
+  <!-- Indicadores de posición -->
+  <div class="indicators">
+    <div *ngFor="let i of [].constructor(clientes.length - itemsPerView + 1); let index = index"
+         class="indicator"
+         [class.active]="index === currentIndex"
+         (click)="currentIndex = index"></div>
+  </div>
+</div>

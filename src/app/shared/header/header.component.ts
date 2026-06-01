@@ -48,6 +48,22 @@ export class HeaderComponent {
       });
     }
   }
+
+  irAContacto(): void {
+    // Verificamos si ya estamos en el home
+    if (this.isHome) {
+      // Si ya estamos, solo hacemos scroll
+      this.scrollService.scrollTo('contacto-footer');
+    } else {
+      // Si no estamos en home, navegamos primero y LUEGO hacemos scroll
+      this.router.navigate(['/']).then(() => {
+        // Usamos un pequeño delay para asegurar que el home se haya renderizado
+        setTimeout(() => {
+          this.scrollService.scrollTo('contacto-footer');
+        }, 100); 
+      });
+    }
+  }
     irAServicios(): void {
     // Verificamos si ya estamos en el home
     if (this.isHome) {
@@ -89,6 +105,22 @@ export class HeaderComponent {
         // Usamos un pequeño delay para asegurar que el home se haya renderizado
         setTimeout(() => {
           this.scrollService.scrollTo('mantenemos');
+        }, 100); 
+      });
+    }
+  }
+
+  irAProyectos(): void {
+    // Verificamos si ya estamos en el home
+    if (this.isHome) {
+      // Si ya estamos, solo hacemos scroll
+      this.scrollService.scrollTo('proyectos');
+    } else {
+      // Si no estamos en home, navegamos primero y LUEGO hacemos scroll
+      this.router.navigate(['/']).then(() => {
+        // Usamos un pequeño delay para asegurar que el home se haya renderizado
+        setTimeout(() => {
+          this.scrollService.scrollTo('proyectos');
         }, 100); 
       });
     }

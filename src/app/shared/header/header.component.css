@@ -24,7 +24,7 @@ nav.navbar {
 .nav-link{color: white; font-size: 1.2em;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.753); }
 @media (max-width: 991.98px) {
   .header-padding {
-    /* Podrías necesitar un valor ligeramente diferente cuando el menú está colapsado */
-    height: 101px; 
+    /* Mantenemos la misma altura porque el offcanvas no expande la navbar */
+    height: 73px; 
   }
 }

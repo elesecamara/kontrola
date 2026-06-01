@@ -1,9 +1,14 @@
+/* Compensa el header fijo (73px) al navegar por el menú a cada sección */
+section[id] {
+    scroll-margin-top: 73px;
+}
+
 section.bnco.bgHacemos {
     background-image: url(/assets/img/fnd_hcms.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
-section#soluciones\ bgSoluciones {
+section#soluciones.bgSoluciones {
     background-image: url(/assets/img/fnd_serv.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -48,7 +53,7 @@ section {
     border-radius: 9px;
 }
 .proyectCard {
-    margin: 10px;
+    padding: 10px;
 }
 .proyectCard img {
     width: 100%; border-radius: 9px;
@@ -153,8 +158,9 @@ section {
 p.mt-3.btncard {
     border: 1px solid white;
     border-radius: 20px;
-    padding: 2px 2px 2px 10px;
-    width: 50%;
+    padding: 2px 10px;
+    width: max-content;
+    white-space: nowrap;
 }
 .grid-item-dos {
   /* Mantiene la forma rectangular (4 de alto por 3 de ancho) */
@@ -167,7 +173,6 @@ p.mt-3.btncard {
   display: flex;
   align-items: flex-end;
   transition: transform 0.3s ease-out;
-      width: 350px;
 }
 
 .grid-item-dos:hover {
@@ -336,5 +341,60 @@ p.mt-3.btncard {
   button.btn.btn-primary {
       font-size: .8em;
       font-weight: 700;
+  }
+  
+  section#soluciones.bgSoluciones {
+      background-image: url(/assets/img/find_serv_movil.png);
+      background-size: cover;
+      background-position: center top;
+  }
+  
+  section.bnco.bgHacemos {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img/fnd_hcms_movil.png);
+      background-size: cover;
+      background-position: center top;
+  }
+  
+  section.bnco, section.gris {
+      background-size: cover;
+      background-position: center top;
+  }
+}
+
+/* Para dispositivos muy pequeños (< 400px) */
+@media (max-width: 399px) {
+  section {
+    padding: 1rem 0.5rem;
+  }
+
+  .sectionIcn {
+    padding-left: 25px;
+    background-size: 16px;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .subtitulo {
+    font-size: 0.85rem;
+  }
+
+  .grid-container,
+  .grid-container-dos {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .imgLogoC {
+    height: 150px;
+    width: 50%;
+    margin: 5px auto;
+  }
+
+  .cta {
+    padding: 0 10px;
+  }
+
+  .cta h2 {
+    font-size: 0.7rem;
   }
 }

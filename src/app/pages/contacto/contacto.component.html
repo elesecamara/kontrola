@@ -1,21 +1,83 @@
-<div class="row justify-content-center mt-5 mb-5 pe-0 ps-0 ms-0 me-0" >
-      <div class="col-lg-8">
-        <div class="card contact-form-card p-4 p-md-5">
-            <div class="card-header-custom position-relative">
-               <img class="ms-3 logoContacto" src="/assets/img/logoB.svg" alt="logo Kontrola">
-          </div>
+<div class="row justify-content-center mt-5 mb-5 pe-0 ps-0 ms-0 me-0">
+  <div class="col-lg-8">
+    <div class="card contact-form-card p-4 p-md-5">
+      <div class="card-header-custom position-relative">
+        <img class="ms-3 logoContacto" src="/assets/img/logoB.svg" alt="logo Kontrola">
+      </div>
 
-          <!--INICIO-->
-           <div class="card contact-card">
-                <div class="card-body card-body-custom">
-                    <h4 class="mb-0 text-dark">CONTÁCTANOS</h4>
-                    <p class="text-muted mb-4">Diseñemos e implementemos la solución que tu industria necesita.</p>
-                    <a href="tel:7292592585" class="text-decoration-none text-dark"><h5>729 259 2585</h5></a>
-                    <a href="mailto:ana.garcia@tecfuturas.com" class="text-decoration-none text-dark"><h5>soluciones&#64;kontrola.mx</h5></a>
-                    <a href="https://wa.me/525512345678" class="btn btn-success" target="_blank"> Enviar WhatsApp</a>
-                </div>
+      <div class="card contact-card">
+        <div class="card-body card-body-custom">
+          <h4 class="mb-4 text-dark">FORMULARIO DE CONTACTO</h4>
+          
+          <form class="contact-form-complete">
+            <!-- Nombre -->
+            <div class="form-group mb-3">
+              <label for="nombre" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
             </div>
-          <!--FIN-->
+
+            <!-- Email -->
+            <div class="form-group mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="form-group mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="(Opcional)">
+            </div>
+
+            <!-- Empresa -->
+            <div class="form-group mb-3">
+              <label for="empresa" class="form-label">Empresa</label>
+              <input type="text" class="form-control" id="empresa" placeholder="Nombre de tu empresa">
+            </div>
+
+            <!-- Asunto -->
+            <div class="form-group mb-3">
+              <label for="asunto" class="form-label">Asunto</label>
+              <select class="form-control" id="asunto" required>
+                <option value="">Selecciona un asunto...</option>
+                <option value="cotizacion">Solicitar cotización</option>
+                <option value="informacion">Información de servicios</option>
+                <option value="soporte">Soporte técnico</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <!-- Mensaje -->
+            <div class="form-group mb-4">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="5" placeholder="Tu mensaje aquí..." required></textarea>
+            </div>
+
+            <!-- Botones -->
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-lg">ENVIAR MENSAJE</button>
+              <a href="https://wa.me/7292592585?text=Hola%2C%20me%20interesa%20cotizar%20un%20sistema%20para%20mi%20industria" 
+                 target="_blank" 
+                 class="btn btn-success btn-lg">
+                📱 WHATSAPP
+              </a>
+            </div>
+          </form>
+
+          <!-- Contacto directo -->
+          <hr class="my-4">
+          <h5 class="text-dark mb-3">O contacta directamente:</h5>
+          <p class="mb-2">
+            <a href="tel:7292592585" class="text-decoration-none text-dark">
+              <strong>☎ 729 259 2585</strong>
+            </a>
+          </p>
+          <p>
+            <a href="mailto:soluciones&#64;kontrola.mx" class="text-decoration-none text-dark">
+              <strong>✉ soluciones&#64;kontrola.mx</strong>
+            </a>
+          </p>
         </div>
       </div>
     </div>
+  </div>
+</div>
